@@ -2,7 +2,7 @@ import sys
 from PyQt5.QtWidgets import QApplication, QDialog, QMainWindow, QTableWidgetItem
 from PyQt5.uic import loadUi
 import numpy as np
-def div_polynome(dividende, diviseur):
+def div_polynome(self,dividende, diviseur):
     deg_dividende = len(dividende) - 1
     deg_diviseur = len(diviseur) - 1
 
@@ -122,7 +122,7 @@ class polynome():
         
 		tap=[0 for i in range(mat1[0][1]+1)]
 		for i in range(len(mat1)):
-                        tap[mat1[i][1]]=mat1[i][0]
+                    tap[mat1[i][1]]=mat1[i][0]
 		return tap
 class MainWindow(QMainWindow):
     def __init__(self):
